@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="dm_imu" type="dm_imu_node" name="dm_imu_node" required="true" output = "screen" >
+    <param name="port"  type="string" value="/dev/ttyACM0" />
+    <param name="baud"  type="int"    value="921600"/>
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find dm_imu)/rviz/imu.rviz" required="true"/>
+
+</launch>
