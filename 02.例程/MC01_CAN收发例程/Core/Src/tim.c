@@ -108,16 +108,5 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 }
 
 /* USER CODE BEGIN 1 */
-static uint32_t ticks=0;
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-	if(htim->Instance==TIM1)
-	{
-		ticks++;
-		if(ticks%1==0)
-		{
-			IMU_SendUpdateFrame();
-		}
-	}
-}
+
 /* USER CODE END 1 */

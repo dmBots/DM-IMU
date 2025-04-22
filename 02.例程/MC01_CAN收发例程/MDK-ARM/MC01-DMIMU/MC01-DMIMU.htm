@@ -3,7 +3,7 @@
 <title>Static Call Graph - [MC01-DMIMU\MC01-DMIMU.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image MC01-DMIMU\MC01-DMIMU.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Feb 26 18:38:41 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Apr 22 18:24:33 2025
 <BR><P>
 <H3>Maximum Stack Usage =        284 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -94,7 +94,7 @@ Function Pointers
  <LI><a href="#[7a]">HAL_TIM_OC_DelayElapsedCallback</a> from stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
  <LI><a href="#[7b]">HAL_TIM_PWM_PulseFinishedCallback</a> from stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
  <LI><a href="#[7c]">HAL_TIM_PWM_PulseFinishedHalfCpltCallback</a> from stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedHalfCpltCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
- <LI><a href="#[74]">HAL_TIM_PeriodElapsedCallback</a> from tim.o(i.HAL_TIM_PeriodElapsedCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
+ <LI><a href="#[74]">HAL_TIM_PeriodElapsedCallback</a> from main.o(i.HAL_TIM_PeriodElapsedCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
  <LI><a href="#[75]">HAL_TIM_PeriodElapsedHalfCpltCallback</a> from stm32f4xx_hal_tim.o(i.HAL_TIM_PeriodElapsedHalfCpltCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
  <LI><a href="#[76]">HAL_TIM_TriggerCallback</a> from stm32f4xx_hal_tim.o(i.HAL_TIM_TriggerCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
  <LI><a href="#[77]">HAL_TIM_TriggerHalfCpltCallback</a> from stm32f4xx_hal_tim.o(i.HAL_TIM_TriggerHalfCpltCallback) referenced from stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
@@ -696,7 +696,7 @@ Global Symbols
 <P><STRONG><a name="[11a]"></a>HAL_CAN_AddTxMessage</STRONG> (Thumb, 330 bytes, Stack size 20 bytes, stm32f4xx_hal_can.o(i.HAL_CAN_AddTxMessage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_CAN_AddTxMessage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_SendUpdateFrame
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_RequestData
 </UL>
 
 <P><STRONG><a name="[af]"></a>HAL_CAN_ConfigFilter</STRONG> (Thumb, 286 bytes, Stack size 20 bytes, stm32f4xx_hal_can.o(i.HAL_CAN_ConfigFilter))
@@ -715,7 +715,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[119]"></a>HAL_CAN_GetTxMailboxesFreeLevel</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, stm32f4xx_hal_can.o(i.HAL_CAN_GetTxMailboxesFreeLevel))
-<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_SendUpdateFrame
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_RequestData
 </UL>
 
 <P><STRONG><a name="[ad]"></a>HAL_CAN_IRQHandler</STRONG> (Thumb, 590 bytes, Stack size 40 bytes, stm32f4xx_hal_can.o(i.HAL_CAN_IRQHandler))
@@ -1246,11 +1246,7 @@ Global Symbols
 <P><STRONG><a name="[7c]"></a>HAL_TIM_PWM_PulseFinishedHalfCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedHalfCpltCallback))
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
 </UL>
-<P><STRONG><a name="[74]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, tim.o(i.HAL_TIM_PeriodElapsedCallback))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = HAL_TIM_PeriodElapsedCallback &rArr; IMU_SendUpdateFrame &rArr; HAL_CAN_AddTxMessage
-</UL>
-<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_SendUpdateFrame
-</UL>
+<P><STRONG><a name="[74]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, main.o(i.HAL_TIM_PeriodElapsedCallback))
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_tim.o(i.TIM_ResetCallback)
 </UL>
 <P><STRONG><a name="[75]"></a>HAL_TIM_PeriodElapsedHalfCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PeriodElapsedHalfCpltCallback))
@@ -1265,13 +1261,13 @@ Global Symbols
 <P><STRONG><a name="[5]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.HardFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f446xx.o(RESET)
 </UL>
-<P><STRONG><a name="[118]"></a>IMU_SendUpdateFrame</STRONG> (Thumb, 52 bytes, Stack size 40 bytes, dm_imu.o(i.IMU_SendUpdateFrame))
-<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = IMU_SendUpdateFrame &rArr; HAL_CAN_AddTxMessage
+<P><STRONG><a name="[118]"></a>IMU_RequestData</STRONG> (Thumb, 74 bytes, Stack size 48 bytes, dm_imu.o(i.IMU_RequestData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = IMU_RequestData &rArr; HAL_CAN_AddTxMessage
 </UL>
 <BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_GetTxMailboxesFreeLevel
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_AddTxMessage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[11b]"></a>IMU_UpdateAccel</STRONG> (Thumb, 114 bytes, Stack size 12 bytes, dm_imu.o(i.IMU_UpdateAccel))
@@ -2096,7 +2092,7 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f446xx.o(RESET)
 </UL>
-<P><STRONG><a name="[a4]"></a>main</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[a4]"></a>main</STRONG> (Thumb, 132 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = main &rArr; MX_USB_DEVICE_Init &rArr; USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
@@ -2104,6 +2100,7 @@ Global Symbols
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_CAN2_Init
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_CAN1_Init
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_RequestData
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Start
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_FilterInit

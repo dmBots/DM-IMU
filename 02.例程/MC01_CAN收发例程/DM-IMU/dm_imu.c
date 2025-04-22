@@ -43,7 +43,7 @@ float uint_to_float(int x_int, float x_min, float x_max, int bits)
 
 
 
-void IMU_RequestData(uint16_t can_id,uint8_t reg)
+void IMU_RequestData(CAN_HandleTypeDef* hcan,uint16_t can_id,uint8_t reg)
 {
 	CAN_TxHeaderTypeDef tx_header;
 	uint8_t cmd[4]={(uint8_t)can_id,(uint8_t)(can_id>>8),reg,0xCC};
@@ -53,9 +53,9 @@ void IMU_RequestData(uint16_t can_id,uint8_t reg)
 	tx_header.RTR=CAN_RTR_DATA;
 	tx_header.StdId=0x6FF;
 	
-	if(HAL_CAN_GetTxMailboxesFreeLevel(&hcan2)>1)
+	if(HAL_CAN_GetTxMailboxesFreeLevel(hcan)>1)
 	{
-		HAL_CAN_AddTxMessage(&hcan2,&tx_header,cmd,&returnBox);
+		HAL_CAN_AddTxMessage(hcan,&tx_header,cmd,&returnBox);
 	}
 }
 

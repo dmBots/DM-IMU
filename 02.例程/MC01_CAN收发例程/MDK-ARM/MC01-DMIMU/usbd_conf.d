@@ -2,7 +2,7 @@ mc01-dmimu\usbd_conf.o: ../USB_DEVICE/Target/usbd_conf.c
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Include/core_cm4.h
-mc01-dmimu\usbd_conf.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+mc01-dmimu\usbd_conf.o: d:\Keil_v5_armMDK\ARM\ARMCC\Bin\..\include\stdint.h
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Include/cmsis_version.h
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -14,7 +14,7 @@ mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
 mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 mc01-dmimu\usbd_conf.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-mc01-dmimu\usbd_conf.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+mc01-dmimu\usbd_conf.o: d:\Keil_v5_armMDK\ARM\ARMCC\Bin\..\include\stddef.h
 mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -35,9 +35,9 @@ mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 mc01-dmimu\usbd_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 mc01-dmimu\usbd_conf.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
 mc01-dmimu\usbd_conf.o: ../USB_DEVICE/Target/usbd_conf.h
-mc01-dmimu\usbd_conf.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-mc01-dmimu\usbd_conf.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-mc01-dmimu\usbd_conf.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+mc01-dmimu\usbd_conf.o: d:\Keil_v5_armMDK\ARM\ARMCC\Bin\..\include\stdio.h
+mc01-dmimu\usbd_conf.o: d:\Keil_v5_armMDK\ARM\ARMCC\Bin\..\include\stdlib.h
+mc01-dmimu\usbd_conf.o: d:\Keil_v5_armMDK\ARM\ARMCC\Bin\..\include\string.h
 mc01-dmimu\usbd_conf.o: ../Core/Inc/main.h
 mc01-dmimu\usbd_conf.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 mc01-dmimu\usbd_conf.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h

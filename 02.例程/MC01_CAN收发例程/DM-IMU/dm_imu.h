@@ -35,6 +35,5 @@ typedef struct
 }imu_t;
 
 void IMU_UpdateData(uint8_t* pData);
-void IMU_SendUpdateFrame();
-
+void IMU_RequestData(CAN_HandleTypeDef* hcan,uint16_t can_id,uint8_t reg);
 #endif

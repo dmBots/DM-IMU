@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "dm_imu.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +46,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t freq_1k=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -57,7 +57,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+static uint32_t tick_ms=0;
 /* USER CODE END 0 */
 
 /**
@@ -105,7 +105,24 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+		if(freq_1k)
+		{
+			tick_ms++;
+			
+			if(tick_ms%3==0)
+			{
+				IMU_RequestData(&hcan1,0x01,3);
+			}
+			else if(tick_ms%2==0)
+			{
+				IMU_RequestData(&hcan1,0x01,2);
+			}
+			else if(tick_ms%1==0)
+			{
+				IMU_RequestData(&hcan1,0x01,1);
+			}
+			freq_1k=0;
+		}
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -158,7 +175,14 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+static uint32_t ticks=0;
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(htim->Instance==TIM1)
+	{
+		freq_1k=1;
+	}
+}
 /* USER CODE END 4 */
 
 /**
