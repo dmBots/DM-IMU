@@ -120,15 +120,15 @@ int main(void)
 			
 			if(tick_ms%3==0)
 			{
-				IMU_RequestData(&hfdcan1,0x01,3);
+				IMU_RequestData(&hfdcan3,0x01,3);
 			}
 			else if(tick_ms%2==0)
 			{
-				IMU_RequestData(&hfdcan1,0x01,2);
+				IMU_RequestData(&hfdcan3,0x01,2);
 			}
 			else if(tick_ms%1==0)
 			{
-				IMU_RequestData(&hfdcan1,0x01,1);
+				IMU_RequestData(&hfdcan3,0x01,1);
 			}
 			
 			if(tick_ms>1000)
@@ -138,32 +138,7 @@ int main(void)
 		}
      /* USER CODE END 3 */
   }
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-		if(freq_1k)
-		{
-			tick_ms++;
-			
-			if(tick_ms%3==0)
-			{
-				IMU_RequestData(&hfdcan1,0x01,3);
-			}
-			else if(tick_ms%2==0)
-			{
-				IMU_RequestData(&hfdcan1,0x01,2);
-			}
-			else if(tick_ms%1==0)
-			{
-				IMU_RequestData(&hfdcan1,0x01,1);
-			}
-			
-			if(tick_ms>1000)
-				tick_ms=0;
-				
-			freq_1k=0;
-		}
-  /* USER CODE END 3 */
+  /* USER CODE END WHILE */
 }
 
 /**
