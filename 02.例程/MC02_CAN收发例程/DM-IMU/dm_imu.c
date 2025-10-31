@@ -50,7 +50,7 @@ void IMU_RequestData(FDCAN_HandleTypeDef* hfdcan,uint16_t can_id,uint8_t reg)
 	tx_header.DataLength=FDCAN_DLC_BYTES_4;
 	tx_header.IdType=FDCAN_STANDARD_ID;
 	tx_header.TxFrameType=FDCAN_DATA_FRAME;
-	tx_header.Identifier=0x6FF;
+	tx_header.Identifier=can_id;
 	tx_header.FDFormat=FDCAN_CLASSIC_CAN;
 	tx_header.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
 	tx_header.BitRateSwitch = FDCAN_BRS_OFF;

@@ -51,7 +51,7 @@ void IMU_RequestData(CAN_HandleTypeDef* hcan,uint16_t can_id,uint8_t reg)
 	tx_header.DLC=4;
 	tx_header.IDE=CAN_ID_STD;
 	tx_header.RTR=CAN_RTR_DATA;
-	tx_header.StdId=0x6FF;
+	tx_header.StdId=can_id;
 	
 	if(HAL_CAN_GetTxMailboxesFreeLevel(hcan)>1)
 	{
