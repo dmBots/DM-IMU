@@ -1,0 +1,1255 @@
+[0.058s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.058s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b89b527ca00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b89b527c4f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b89b527c4f0>>)
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.139s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kielas/dm-imu'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(01.模型及图纸) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Inc) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Core/Src) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/DM-IMU) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Device/ST/STM32F4xx/Include) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/CMSIS/Include) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Drivers/STM32F4xx_HAL_Driver/Src) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/DebugConfig) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/MC01-DMIMU) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/MDK-ARM/RTE/_MC01-DMIMU) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Inc) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/Middlewares/ST/STM32_USB_Device_Library/Core/Src) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/App) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC01_CAN收发例程/USB_DEVICE/Target) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Inc) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/Src) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Core/dm_imu) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/CMSIS/Include) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/CtrBoard-H7_RS485) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/DebugConfig) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_485接收例程/CtrBoard-H7_RS485/MDK-ARM/RTE/_CtrBoard-H7_RS485) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Inc) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Core/Src) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/DM-IMU) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Device/ST/STM32H7xx/Include) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/CMSIS/Include) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/Drivers/STM32H7xx_HAL_Driver/Src) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/CtrBoard-H7_FDCAN) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/DebugConfig) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/MDK-ARM/RTE/_CtrBoard-H7_FDCAN) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/MC02_CAN收发例程/User) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS1-noetic例程/src/dm_imu) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package '02.例程/ROS1-noetic例程/src/dm_imu' with type 'ros.catkin' and name 'dm_imu'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(02.例程/ROS2-humble例程) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package '02.例程/ROS2-humble例程' with type 'ros.ament_python' and name 'dm_imu'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'ros'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extensions ['cmake', 'python']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'cmake'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'python'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(03.上位机/弃用的) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(04.固件) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/humble
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.206s] ERROR:colcon:colcon build: Duplicate package names not supported:
+- dm_imu:
+  - 02.例程/ROS1-noetic例程/src/dm_imu
+  - 02.例程/ROS2-humble例程

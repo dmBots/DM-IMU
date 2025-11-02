@@ -1,0 +1,17 @@
+dm_imu:
+  ros__parameters:
+    port: /dev/ttyACM0
+    baudrate: 921600
+    frame_id: imu_link
+
+    # 三个话题的发布开关
+    publish_imu_data: true   # 关掉就设 false
+    publish_rpy: true
+    publish_pose: true
+
+    # RPY 的单位（true=度，false=弧度）
+    publish_rpy_in_degree: true
+
+    # 其他
+    qos_reliable: true      # 或 true，按你需求
+    verbose: false

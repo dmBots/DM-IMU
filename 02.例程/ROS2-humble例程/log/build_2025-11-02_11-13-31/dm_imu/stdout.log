@@ -1,0 +1,29 @@
+running develop
+running egg_info
+creating dm_imu.egg-info
+writing dm_imu.egg-info/PKG-INFO
+writing dependency_links to dm_imu.egg-info/dependency_links.txt
+writing entry points to dm_imu.egg-info/entry_points.txt
+writing requirements to dm_imu.egg-info/requires.txt
+writing top-level names to dm_imu.egg-info/top_level.txt
+writing manifest file 'dm_imu.egg-info/SOURCES.txt'
+reading manifest file 'dm_imu.egg-info/SOURCES.txt'
+writing manifest file 'dm_imu.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/lib/python3.10/site-packages/dm-imu.egg-link (link to .)
+Installing dm_imu_node script to /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/lib/dm_imu
+
+Installed /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu
+running symlink_data
+creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index
+creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index/resource_index
+creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index/resource_index/packages
+symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/resource/dm_imu -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index/resource_index/packages
+symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/package.xml -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu
+creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/launch
+symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/launch/dm_imu.launch.py -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/launch
+symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/launch/dm_imu_rviz.launch.py -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/launch
+creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/config
+symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/config/params.yaml -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/config
+creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/rviz
+symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/rviz/imu.rviz -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/rviz
