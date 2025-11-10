@@ -106,8 +106,11 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim1);
 	
 	GPIO_5V_PowerOn();
+	
+	imu_init(0x01,0x11,&hfdcan3);
+	
   /* USER CODE END 2 */
-
+	
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -120,15 +123,15 @@ int main(void)
 			
 			if(tick_ms%3==0)
 			{
-				IMU_RequestData(&hfdcan3,0x01,3);
+				imu_request_accel();
 			}
 			else if(tick_ms%2==0)
 			{
-				IMU_RequestData(&hfdcan3,0x01,2);
+				imu_request_gyro();
 			}
 			else if(tick_ms%1==0)
 			{
-				IMU_RequestData(&hfdcan3,0x01,1);
+				imu_request_quat();
 			}
 			
 			if(tick_ms>1000)

@@ -37,3 +37,4 @@ ctrboard-h7_fdcan\dm_imu.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ti
 ctrboard-h7_fdcan\dm_imu.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 ctrboard-h7_fdcan\dm_imu.o: ../Core/Inc/fdcan.h
 ctrboard-h7_fdcan\dm_imu.o: ../Core/Inc/main.h
+ctrboard-h7_fdcan\dm_imu.o: d:\Keil_v5_armMDK\ARM\ARMCC\Bin\..\include\string.h

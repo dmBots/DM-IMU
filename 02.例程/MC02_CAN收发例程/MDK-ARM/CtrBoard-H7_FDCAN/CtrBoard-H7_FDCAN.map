@@ -45,10 +45,13 @@ Section Cross References
     main.o(i.main) refers to can_bsp.o(i.can_bsp_init) for can_bsp_init
     main.o(i.main) refers to stm32h7xx_hal_tim.o(i.HAL_TIM_Base_Start_IT) for HAL_TIM_Base_Start_IT
     main.o(i.main) refers to gpio.o(i.GPIO_5V_PowerOn) for GPIO_5V_PowerOn
-    main.o(i.main) refers to dm_imu.o(i.IMU_RequestData) for IMU_RequestData
+    main.o(i.main) refers to dm_imu.o(i.imu_init) for imu_init
+    main.o(i.main) refers to dm_imu.o(i.imu_request_quat) for imu_request_quat
+    main.o(i.main) refers to dm_imu.o(i.imu_request_accel) for imu_request_accel
+    main.o(i.main) refers to dm_imu.o(i.imu_request_gyro) for imu_request_gyro
     main.o(i.main) refers to tim.o(.bss) for htim1
-    main.o(i.main) refers to main.o(.data) for .data
     main.o(i.main) refers to fdcan.o(.bss) for hfdcan3
+    main.o(i.main) refers to main.o(.data) for .data
     gpio.o(i.GPIO_5V_PowerOff) refers to stm32h7xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     gpio.o(i.GPIO_5V_PowerOn) refers to stm32h7xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     gpio.o(i.MX_GPIO_Init) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
@@ -723,8 +726,6 @@ Section Cross References
     can_bsp.o(i.fdcan3_rx_callback) refers to fdcan.o(.bss) for hfdcan3
     can_bsp.o(i.fdcanx_receive) refers to stm32h7xx_hal_fdcan.o(i.HAL_FDCAN_GetRxMessage) for HAL_FDCAN_GetRxMessage
     can_bsp.o(i.fdcanx_send_data) refers to stm32h7xx_hal_fdcan.o(i.HAL_FDCAN_AddMessageToTxFifoQ) for HAL_FDCAN_AddMessageToTxFifoQ
-    dm_imu.o(i.IMU_RequestData) refers to stm32h7xx_hal_fdcan.o(i.HAL_FDCAN_GetTxFifoFreeLevel) for HAL_FDCAN_GetTxFifoFreeLevel
-    dm_imu.o(i.IMU_RequestData) refers to stm32h7xx_hal_fdcan.o(i.HAL_FDCAN_AddMessageToTxFifoQ) for HAL_FDCAN_AddMessageToTxFifoQ
     dm_imu.o(i.IMU_UpdateAccel) refers to dm_imu.o(i.uint_to_float) for uint_to_float
     dm_imu.o(i.IMU_UpdateAccel) refers to dm_imu.o(.bss) for .bss
     dm_imu.o(i.IMU_UpdateData) refers to dm_imu.o(i.IMU_UpdateQuaternion) for IMU_UpdateQuaternion
@@ -737,6 +738,28 @@ Section Cross References
     dm_imu.o(i.IMU_UpdateGyro) refers to dm_imu.o(.bss) for .bss
     dm_imu.o(i.IMU_UpdateQuaternion) refers to dm_imu.o(i.uint_to_float) for uint_to_float
     dm_imu.o(i.IMU_UpdateQuaternion) refers to dm_imu.o(.bss) for .bss
+    dm_imu.o(i.imu_accel_calibration) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_change_com_port) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_change_to_active) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_change_to_request) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_gyro_calibration) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_init) refers to dm_imu.o(.bss) for .bss
+    dm_imu.o(i.imu_read_reg) refers to dm_imu.o(i.imu_send_cmd) for imu_send_cmd
+    dm_imu.o(i.imu_reboot) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_request_accel) refers to dm_imu.o(i.imu_read_reg) for imu_read_reg
+    dm_imu.o(i.imu_request_euler) refers to dm_imu.o(i.imu_read_reg) for imu_read_reg
+    dm_imu.o(i.imu_request_gyro) refers to dm_imu.o(i.imu_read_reg) for imu_read_reg
+    dm_imu.o(i.imu_request_quat) refers to dm_imu.o(i.imu_read_reg) for imu_read_reg
+    dm_imu.o(i.imu_restore_settings) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_save_parameters) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_send_cmd) refers to stm32h7xx_hal_fdcan.o(i.HAL_FDCAN_GetTxFifoFreeLevel) for HAL_FDCAN_GetTxFifoFreeLevel
+    dm_imu.o(i.imu_send_cmd) refers to stm32h7xx_hal_fdcan.o(i.HAL_FDCAN_AddMessageToTxFifoQ) for HAL_FDCAN_AddMessageToTxFifoQ
+    dm_imu.o(i.imu_send_cmd) refers to dm_imu.o(.bss) for .bss
+    dm_imu.o(i.imu_set_active_mode_delay) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_set_baud) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_set_can_id) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_set_mst_id) refers to dm_imu.o(i.imu_write_reg) for imu_write_reg
+    dm_imu.o(i.imu_write_reg) refers to dm_imu.o(i.imu_send_cmd) for imu_send_cmd
     __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
     __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
     __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
@@ -1498,8 +1521,22 @@ Removing Unused input sections from the image.
     Removing dm_imu.o(.revsh_text), (4 bytes).
     Removing dm_imu.o(.rrx_text), (6 bytes).
     Removing dm_imu.o(i.float_to_uint), (40 bytes).
+    Removing dm_imu.o(i.imu_accel_calibration), (8 bytes).
+    Removing dm_imu.o(i.imu_change_com_port), (8 bytes).
+    Removing dm_imu.o(i.imu_change_to_active), (8 bytes).
+    Removing dm_imu.o(i.imu_change_to_request), (8 bytes).
+    Removing dm_imu.o(i.imu_gyro_calibration), (8 bytes).
+    Removing dm_imu.o(i.imu_reboot), (8 bytes).
+    Removing dm_imu.o(i.imu_request_euler), (6 bytes).
+    Removing dm_imu.o(i.imu_restore_settings), (8 bytes).
+    Removing dm_imu.o(i.imu_save_parameters), (8 bytes).
+    Removing dm_imu.o(i.imu_set_active_mode_delay), (8 bytes).
+    Removing dm_imu.o(i.imu_set_baud), (8 bytes).
+    Removing dm_imu.o(i.imu_set_can_id), (8 bytes).
+    Removing dm_imu.o(i.imu_set_mst_id), (8 bytes).
+    Removing dm_imu.o(i.imu_write_reg), (8 bytes).
 
-655 unused section(s) (total 62768 bytes) removed from the image.
+669 unused section(s) (total 62878 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1539,49 +1576,49 @@ Image Symbol Table
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
-    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
     ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
     ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
     ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
     ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
     ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
     ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
@@ -1748,53 +1785,59 @@ Image Symbol Table
     i.HAL_TIM_PeriodElapsedCallback          0x08002d48   Section        0  main.o(i.HAL_TIM_PeriodElapsedCallback)
     i.HAL_TIM_TriggerCallback                0x08002d60   Section        0  stm32h7xx_hal_tim.o(i.HAL_TIM_TriggerCallback)
     i.HardFault_Handler                      0x08002d62   Section        0  stm32h7xx_it.o(i.HardFault_Handler)
-    i.IMU_RequestData                        0x08002d64   Section        0  dm_imu.o(i.IMU_RequestData)
-    i.IMU_UpdateAccel                        0x08002db8   Section        0  dm_imu.o(i.IMU_UpdateAccel)
-    i.IMU_UpdateData                         0x08002e14   Section        0  dm_imu.o(i.IMU_UpdateData)
-    i.IMU_UpdateEuler                        0x08002e38   Section        0  dm_imu.o(i.IMU_UpdateEuler)
-    i.IMU_UpdateGyro                         0x08002e9c   Section        0  dm_imu.o(i.IMU_UpdateGyro)
-    i.IMU_UpdateQuaternion                   0x08002ef8   Section        0  dm_imu.o(i.IMU_UpdateQuaternion)
-    i.MX_FDCAN1_Init                         0x08002f8c   Section        0  fdcan.o(i.MX_FDCAN1_Init)
-    i.MX_FDCAN2_Init                         0x08002ff0   Section        0  fdcan.o(i.MX_FDCAN2_Init)
-    i.MX_FDCAN3_Init                         0x08003058   Section        0  fdcan.o(i.MX_FDCAN3_Init)
-    i.MX_GPIO_Init                           0x080030c0   Section        0  gpio.o(i.MX_GPIO_Init)
-    i.MX_TIM1_Init                           0x08003150   Section        0  tim.o(i.MX_TIM1_Init)
-    i.MemManage_Handler                      0x080031bc   Section        0  stm32h7xx_it.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x080031be   Section        0  stm32h7xx_it.o(i.NMI_Handler)
-    i.PendSV_Handler                         0x080031c0   Section        0  stm32h7xx_it.o(i.PendSV_Handler)
-    i.RCCEx_PLL2_Config                      0x080031c4   Section        0  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL2_Config)
-    RCCEx_PLL2_Config                        0x080031c5   Thumb Code   284  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL2_Config)
-    i.RCCEx_PLL3_Config                      0x080032e4   Section        0  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL3_Config)
-    RCCEx_PLL3_Config                        0x080032e5   Thumb Code   284  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL3_Config)
-    i.SVC_Handler                            0x08003404   Section        0  stm32h7xx_it.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x08003406   Section        0  stm32h7xx_it.o(i.SysTick_Handler)
-    i.SystemClock_Config                     0x0800340c   Section        0  main.o(i.SystemClock_Config)
-    i.SystemInit                             0x080034a4   Section        0  system_stm32h7xx.o(i.SystemInit)
-    i.TIM1_UP_IRQHandler                     0x08003564   Section        0  stm32h7xx_it.o(i.TIM1_UP_IRQHandler)
-    i.TIM_Base_SetConfig                     0x08003570   Section        0  stm32h7xx_hal_tim.o(i.TIM_Base_SetConfig)
-    i.TIM_ETR_SetConfig                      0x08003648   Section        0  stm32h7xx_hal_tim.o(i.TIM_ETR_SetConfig)
-    i.TIM_ITRx_SetConfig                     0x0800365c   Section        0  stm32h7xx_hal_tim.o(i.TIM_ITRx_SetConfig)
-    TIM_ITRx_SetConfig                       0x0800365d   Thumb Code    16  stm32h7xx_hal_tim.o(i.TIM_ITRx_SetConfig)
-    i.TIM_TI1_ConfigInputStage               0x08003670   Section        0  stm32h7xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
-    TIM_TI1_ConfigInputStage                 0x08003671   Thumb Code    34  stm32h7xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
-    i.TIM_TI2_ConfigInputStage               0x08003692   Section        0  stm32h7xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
-    TIM_TI2_ConfigInputStage                 0x08003693   Thumb Code    36  stm32h7xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
-    i.UsageFault_Handler                     0x080036b6   Section        0  stm32h7xx_it.o(i.UsageFault_Handler)
-    i.__NVIC_SetPriority                     0x080036b8   Section        0  stm32h7xx_hal_cortex.o(i.__NVIC_SetPriority)
-    __NVIC_SetPriority                       0x080036b9   Thumb Code    34  stm32h7xx_hal_cortex.o(i.__NVIC_SetPriority)
-    i.can_bsp_init                           0x080036dc   Section        0  can_bsp.o(i.can_bsp_init)
-    i.can_filter_init                        0x08003724   Section        0  can_bsp.o(i.can_filter_init)
-    i.fdcan1_rx_callback                     0x08003764   Section        0  can_bsp.o(i.fdcan1_rx_callback)
-    i.fdcan2_rx_callback                     0x08003780   Section        0  can_bsp.o(i.fdcan2_rx_callback)
-    i.fdcan3_rx_callback                     0x0800379c   Section        0  can_bsp.o(i.fdcan3_rx_callback)
-    i.fdcanx_receive                         0x080037b8   Section        0  can_bsp.o(i.fdcanx_receive)
-    i.main                                   0x080037d8   Section        0  main.o(i.main)
-    i.uint_to_float                          0x080038d4   Section        0  dm_imu.o(i.uint_to_float)
-    x$fpl$fpinit                             0x080038fc   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x080038fc   Number         0  fpinit.o(x$fpl$fpinit)
-    .constdata                               0x08003908   Section       92  stm32h7xx_hal_fdcan.o(.constdata)
-    DLCtoBytes                               0x08003908   Data          16  stm32h7xx_hal_fdcan.o(.constdata)
-    .constdata                               0x08003964   Section       16  system_stm32h7xx.o(.constdata)
+    i.IMU_UpdateAccel                        0x08002d64   Section        0  dm_imu.o(i.IMU_UpdateAccel)
+    i.IMU_UpdateData                         0x08002dc0   Section        0  dm_imu.o(i.IMU_UpdateData)
+    i.IMU_UpdateEuler                        0x08002de4   Section        0  dm_imu.o(i.IMU_UpdateEuler)
+    i.IMU_UpdateGyro                         0x08002e48   Section        0  dm_imu.o(i.IMU_UpdateGyro)
+    i.IMU_UpdateQuaternion                   0x08002ea4   Section        0  dm_imu.o(i.IMU_UpdateQuaternion)
+    i.MX_FDCAN1_Init                         0x08002f38   Section        0  fdcan.o(i.MX_FDCAN1_Init)
+    i.MX_FDCAN2_Init                         0x08002f9c   Section        0  fdcan.o(i.MX_FDCAN2_Init)
+    i.MX_FDCAN3_Init                         0x08003004   Section        0  fdcan.o(i.MX_FDCAN3_Init)
+    i.MX_GPIO_Init                           0x0800306c   Section        0  gpio.o(i.MX_GPIO_Init)
+    i.MX_TIM1_Init                           0x080030fc   Section        0  tim.o(i.MX_TIM1_Init)
+    i.MemManage_Handler                      0x08003168   Section        0  stm32h7xx_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x0800316a   Section        0  stm32h7xx_it.o(i.NMI_Handler)
+    i.PendSV_Handler                         0x0800316c   Section        0  stm32h7xx_it.o(i.PendSV_Handler)
+    i.RCCEx_PLL2_Config                      0x08003170   Section        0  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL2_Config)
+    RCCEx_PLL2_Config                        0x08003171   Thumb Code   284  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL2_Config)
+    i.RCCEx_PLL3_Config                      0x08003290   Section        0  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL3_Config)
+    RCCEx_PLL3_Config                        0x08003291   Thumb Code   284  stm32h7xx_hal_rcc_ex.o(i.RCCEx_PLL3_Config)
+    i.SVC_Handler                            0x080033b0   Section        0  stm32h7xx_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x080033b2   Section        0  stm32h7xx_it.o(i.SysTick_Handler)
+    i.SystemClock_Config                     0x080033b8   Section        0  main.o(i.SystemClock_Config)
+    i.SystemInit                             0x08003450   Section        0  system_stm32h7xx.o(i.SystemInit)
+    i.TIM1_UP_IRQHandler                     0x08003510   Section        0  stm32h7xx_it.o(i.TIM1_UP_IRQHandler)
+    i.TIM_Base_SetConfig                     0x0800351c   Section        0  stm32h7xx_hal_tim.o(i.TIM_Base_SetConfig)
+    i.TIM_ETR_SetConfig                      0x080035f4   Section        0  stm32h7xx_hal_tim.o(i.TIM_ETR_SetConfig)
+    i.TIM_ITRx_SetConfig                     0x08003608   Section        0  stm32h7xx_hal_tim.o(i.TIM_ITRx_SetConfig)
+    TIM_ITRx_SetConfig                       0x08003609   Thumb Code    16  stm32h7xx_hal_tim.o(i.TIM_ITRx_SetConfig)
+    i.TIM_TI1_ConfigInputStage               0x0800361c   Section        0  stm32h7xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
+    TIM_TI1_ConfigInputStage                 0x0800361d   Thumb Code    34  stm32h7xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
+    i.TIM_TI2_ConfigInputStage               0x0800363e   Section        0  stm32h7xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
+    TIM_TI2_ConfigInputStage                 0x0800363f   Thumb Code    36  stm32h7xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
+    i.UsageFault_Handler                     0x08003662   Section        0  stm32h7xx_it.o(i.UsageFault_Handler)
+    i.__NVIC_SetPriority                     0x08003664   Section        0  stm32h7xx_hal_cortex.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x08003665   Thumb Code    34  stm32h7xx_hal_cortex.o(i.__NVIC_SetPriority)
+    i.can_bsp_init                           0x08003688   Section        0  can_bsp.o(i.can_bsp_init)
+    i.can_filter_init                        0x080036d0   Section        0  can_bsp.o(i.can_filter_init)
+    i.fdcan1_rx_callback                     0x08003710   Section        0  can_bsp.o(i.fdcan1_rx_callback)
+    i.fdcan2_rx_callback                     0x0800372c   Section        0  can_bsp.o(i.fdcan2_rx_callback)
+    i.fdcan3_rx_callback                     0x08003748   Section        0  can_bsp.o(i.fdcan3_rx_callback)
+    i.fdcanx_receive                         0x08003764   Section        0  can_bsp.o(i.fdcanx_receive)
+    i.imu_init                               0x08003784   Section        0  dm_imu.o(i.imu_init)
+    i.imu_read_reg                           0x08003794   Section        0  dm_imu.o(i.imu_read_reg)
+    i.imu_request_accel                      0x0800379c   Section        0  dm_imu.o(i.imu_request_accel)
+    i.imu_request_gyro                       0x080037a2   Section        0  dm_imu.o(i.imu_request_gyro)
+    i.imu_request_quat                       0x080037a8   Section        0  dm_imu.o(i.imu_request_quat)
+    i.imu_send_cmd                           0x080037b0   Section        0  dm_imu.o(i.imu_send_cmd)
+    imu_send_cmd                             0x080037b1   Thumb Code    78  dm_imu.o(i.imu_send_cmd)
+    i.main                                   0x0800380c   Section        0  main.o(i.main)
+    i.uint_to_float                          0x08003910   Section        0  dm_imu.o(i.uint_to_float)
+    x$fpl$fpinit                             0x08003938   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x08003938   Number         0  fpinit.o(x$fpl$fpinit)
+    .constdata                               0x08003944   Section       92  stm32h7xx_hal_fdcan.o(.constdata)
+    DLCtoBytes                               0x08003944   Data          16  stm32h7xx_hal_fdcan.o(.constdata)
+    .constdata                               0x080039a0   Section       16  system_stm32h7xx.o(.constdata)
     .data                                    0x24000000   Section        8  main.o(.data)
     tick_ms                                  0x24000004   Data           4  main.o(.data)
     .data                                    0x24000008   Section        4  fdcan.o(.data)
@@ -1804,13 +1847,13 @@ Image Symbol Table
     .data                                    0x24000020   Section       24  can_bsp.o(.data)
     .bss                                     0x24000038   Section      480  fdcan.o(.bss)
     .bss                                     0x24000218   Section       76  tim.o(.bss)
-    .bss                                     0x24000264   Section       56  dm_imu.o(.bss)
-    .bss                                     0x2400029c   Section       96  libspace.o(.bss)
-    HEAP                                     0x24000300   Section      512  startup_stm32h723xx.o(HEAP)
-    Heap_Mem                                 0x24000300   Data         512  startup_stm32h723xx.o(HEAP)
-    STACK                                    0x24000500   Section     1024  startup_stm32h723xx.o(STACK)
-    Stack_Mem                                0x24000500   Data        1024  startup_stm32h723xx.o(STACK)
-    __initial_sp                             0x24000900   Data           0  startup_stm32h723xx.o(STACK)
+    .bss                                     0x24000264   Section       64  dm_imu.o(.bss)
+    .bss                                     0x240002a4   Section       96  libspace.o(.bss)
+    HEAP                                     0x24000308   Section      512  startup_stm32h723xx.o(HEAP)
+    Heap_Mem                                 0x24000308   Data         512  startup_stm32h723xx.o(HEAP)
+    STACK                                    0x24000508   Section     1024  startup_stm32h723xx.o(STACK)
+    Stack_Mem                                0x24000508   Data        1024  startup_stm32h723xx.o(STACK)
+    __initial_sp                             0x24000908   Data           0  startup_stm32h723xx.o(STACK)
 
     Global Symbols
 
@@ -2120,42 +2163,46 @@ Image Symbol Table
     HAL_TIM_PeriodElapsedCallback            0x08002d49   Thumb Code    16  main.o(i.HAL_TIM_PeriodElapsedCallback)
     HAL_TIM_TriggerCallback                  0x08002d61   Thumb Code     2  stm32h7xx_hal_tim.o(i.HAL_TIM_TriggerCallback)
     HardFault_Handler                        0x08002d63   Thumb Code     2  stm32h7xx_it.o(i.HardFault_Handler)
-    IMU_RequestData                          0x08002d65   Thumb Code    78  dm_imu.o(i.IMU_RequestData)
-    IMU_UpdateAccel                          0x08002db9   Thumb Code    80  dm_imu.o(i.IMU_UpdateAccel)
-    IMU_UpdateData                           0x08002e15   Thumb Code    36  dm_imu.o(i.IMU_UpdateData)
-    IMU_UpdateEuler                          0x08002e39   Thumb Code    80  dm_imu.o(i.IMU_UpdateEuler)
-    IMU_UpdateGyro                           0x08002e9d   Thumb Code    80  dm_imu.o(i.IMU_UpdateGyro)
-    IMU_UpdateQuaternion                     0x08002ef9   Thumb Code   144  dm_imu.o(i.IMU_UpdateQuaternion)
-    MX_FDCAN1_Init                           0x08002f8d   Thumb Code    92  fdcan.o(i.MX_FDCAN1_Init)
-    MX_FDCAN2_Init                           0x08002ff1   Thumb Code    96  fdcan.o(i.MX_FDCAN2_Init)
-    MX_FDCAN3_Init                           0x08003059   Thumb Code    96  fdcan.o(i.MX_FDCAN3_Init)
-    MX_GPIO_Init                             0x080030c1   Thumb Code   134  gpio.o(i.MX_GPIO_Init)
-    MX_TIM1_Init                             0x08003151   Thumb Code   100  tim.o(i.MX_TIM1_Init)
-    MemManage_Handler                        0x080031bd   Thumb Code     2  stm32h7xx_it.o(i.MemManage_Handler)
-    NMI_Handler                              0x080031bf   Thumb Code     2  stm32h7xx_it.o(i.NMI_Handler)
-    PendSV_Handler                           0x080031c1   Thumb Code     2  stm32h7xx_it.o(i.PendSV_Handler)
-    SVC_Handler                              0x08003405   Thumb Code     2  stm32h7xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x08003407   Thumb Code     4  stm32h7xx_it.o(i.SysTick_Handler)
-    SystemClock_Config                       0x0800340d   Thumb Code   146  main.o(i.SystemClock_Config)
-    SystemInit                               0x080034a5   Thumb Code   158  system_stm32h7xx.o(i.SystemInit)
-    TIM1_UP_IRQHandler                       0x08003565   Thumb Code     6  stm32h7xx_it.o(i.TIM1_UP_IRQHandler)
-    TIM_Base_SetConfig                       0x08003571   Thumb Code   174  stm32h7xx_hal_tim.o(i.TIM_Base_SetConfig)
-    TIM_ETR_SetConfig                        0x08003649   Thumb Code    18  stm32h7xx_hal_tim.o(i.TIM_ETR_SetConfig)
-    UsageFault_Handler                       0x080036b7   Thumb Code     2  stm32h7xx_it.o(i.UsageFault_Handler)
-    can_bsp_init                             0x080036dd   Thumb Code    58  can_bsp.o(i.can_bsp_init)
-    can_filter_init                          0x08003725   Thumb Code    58  can_bsp.o(i.can_filter_init)
-    fdcan1_rx_callback                       0x08003765   Thumb Code    20  can_bsp.o(i.fdcan1_rx_callback)
-    fdcan2_rx_callback                       0x08003781   Thumb Code    20  can_bsp.o(i.fdcan2_rx_callback)
-    fdcan3_rx_callback                       0x0800379d   Thumb Code    20  can_bsp.o(i.fdcan3_rx_callback)
-    fdcanx_receive                           0x080037b9   Thumb Code    30  can_bsp.o(i.fdcanx_receive)
-    main                                     0x080037d9   Thumb Code   230  main.o(i.main)
-    uint_to_float                            0x080038d5   Thumb Code    40  dm_imu.o(i.uint_to_float)
-    _fp_init                                 0x080038fd   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x08003905   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x08003905   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    D1CorePrescTable                         0x08003964   Data          16  system_stm32h7xx.o(.constdata)
-    Region$$Table$$Base                      0x08003974   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003994   Number         0  anon$$obj.o(Region$$Table)
+    IMU_UpdateAccel                          0x08002d65   Thumb Code    80  dm_imu.o(i.IMU_UpdateAccel)
+    IMU_UpdateData                           0x08002dc1   Thumb Code    36  dm_imu.o(i.IMU_UpdateData)
+    IMU_UpdateEuler                          0x08002de5   Thumb Code    80  dm_imu.o(i.IMU_UpdateEuler)
+    IMU_UpdateGyro                           0x08002e49   Thumb Code    80  dm_imu.o(i.IMU_UpdateGyro)
+    IMU_UpdateQuaternion                     0x08002ea5   Thumb Code   144  dm_imu.o(i.IMU_UpdateQuaternion)
+    MX_FDCAN1_Init                           0x08002f39   Thumb Code    92  fdcan.o(i.MX_FDCAN1_Init)
+    MX_FDCAN2_Init                           0x08002f9d   Thumb Code    96  fdcan.o(i.MX_FDCAN2_Init)
+    MX_FDCAN3_Init                           0x08003005   Thumb Code    96  fdcan.o(i.MX_FDCAN3_Init)
+    MX_GPIO_Init                             0x0800306d   Thumb Code   134  gpio.o(i.MX_GPIO_Init)
+    MX_TIM1_Init                             0x080030fd   Thumb Code   100  tim.o(i.MX_TIM1_Init)
+    MemManage_Handler                        0x08003169   Thumb Code     2  stm32h7xx_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x0800316b   Thumb Code     2  stm32h7xx_it.o(i.NMI_Handler)
+    PendSV_Handler                           0x0800316d   Thumb Code     2  stm32h7xx_it.o(i.PendSV_Handler)
+    SVC_Handler                              0x080033b1   Thumb Code     2  stm32h7xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x080033b3   Thumb Code     4  stm32h7xx_it.o(i.SysTick_Handler)
+    SystemClock_Config                       0x080033b9   Thumb Code   146  main.o(i.SystemClock_Config)
+    SystemInit                               0x08003451   Thumb Code   158  system_stm32h7xx.o(i.SystemInit)
+    TIM1_UP_IRQHandler                       0x08003511   Thumb Code     6  stm32h7xx_it.o(i.TIM1_UP_IRQHandler)
+    TIM_Base_SetConfig                       0x0800351d   Thumb Code   174  stm32h7xx_hal_tim.o(i.TIM_Base_SetConfig)
+    TIM_ETR_SetConfig                        0x080035f5   Thumb Code    18  stm32h7xx_hal_tim.o(i.TIM_ETR_SetConfig)
+    UsageFault_Handler                       0x08003663   Thumb Code     2  stm32h7xx_it.o(i.UsageFault_Handler)
+    can_bsp_init                             0x08003689   Thumb Code    58  can_bsp.o(i.can_bsp_init)
+    can_filter_init                          0x080036d1   Thumb Code    58  can_bsp.o(i.can_filter_init)
+    fdcan1_rx_callback                       0x08003711   Thumb Code    20  can_bsp.o(i.fdcan1_rx_callback)
+    fdcan2_rx_callback                       0x0800372d   Thumb Code    20  can_bsp.o(i.fdcan2_rx_callback)
+    fdcan3_rx_callback                       0x08003749   Thumb Code    20  can_bsp.o(i.fdcan3_rx_callback)
+    fdcanx_receive                           0x08003765   Thumb Code    30  can_bsp.o(i.fdcanx_receive)
+    imu_init                                 0x08003785   Thumb Code    10  dm_imu.o(i.imu_init)
+    imu_read_reg                             0x08003795   Thumb Code     8  dm_imu.o(i.imu_read_reg)
+    imu_request_accel                        0x0800379d   Thumb Code     6  dm_imu.o(i.imu_request_accel)
+    imu_request_gyro                         0x080037a3   Thumb Code     6  dm_imu.o(i.imu_request_gyro)
+    imu_request_quat                         0x080037a9   Thumb Code     6  dm_imu.o(i.imu_request_quat)
+    main                                     0x0800380d   Thumb Code   238  main.o(i.main)
+    uint_to_float                            0x08003911   Thumb Code    40  dm_imu.o(i.uint_to_float)
+    _fp_init                                 0x08003939   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x08003941   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x08003941   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    D1CorePrescTable                         0x080039a0   Data          16  system_stm32h7xx.o(.constdata)
+    Region$$Table$$Base                      0x080039b0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080039d0   Number         0  anon$$obj.o(Region$$Table)
     freq_1k                                  0x24000000   Data           1  main.o(.data)
     uwTickFreq                               0x2400000c   Data           1  stm32h7xx_hal.o(.data)
     uwTickPrio                               0x24000010   Data           4  stm32h7xx_hal.o(.data)
@@ -2169,9 +2216,9 @@ Image Symbol Table
     hfdcan2                                  0x240000d8   Data         160  fdcan.o(.bss)
     hfdcan3                                  0x24000178   Data         160  fdcan.o(.bss)
     htim1                                    0x24000218   Data          76  tim.o(.bss)
-    imu                                      0x24000264   Data          56  dm_imu.o(.bss)
-    __libspace_start                         0x2400029c   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x240002fc   Data           0  libspace.o(.bss)
+    imu                                      0x24000264   Data          64  dm_imu.o(.bss)
+    __libspace_start                         0x240002a4   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x24000304   Data           0  libspace.o(.bss)
 
 
 
@@ -2181,71 +2228,71 @@ Memory Map of the image
 
   Image Entry point : 0x080002cd
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000039cc, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003a08, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003994, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000039d0, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000002cc   Data   RO            3    RESET               startup_stm32h723xx.o
-    0x080002cc   0x080002cc   0x00000008   Code   RO         4793  * !!!main             c_w.l(__main.o)
-    0x080002d4   0x080002d4   0x00000034   Code   RO         4952    !!!scatter          c_w.l(__scatter.o)
-    0x08000308   0x08000308   0x0000001a   Code   RO         4954    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x080002cc   0x080002cc   0x00000008   Code   RO         4904  * !!!main             c_w.l(__main.o)
+    0x080002d4   0x080002d4   0x00000034   Code   RO         5063    !!!scatter          c_w.l(__scatter.o)
+    0x08000308   0x08000308   0x0000001a   Code   RO         5065    !!handler_copy      c_w.l(__scatter_copy.o)
     0x08000322   0x08000322   0x00000002   PAD
-    0x08000324   0x08000324   0x0000001c   Code   RO         4956    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x08000340   0x08000340   0x00000002   Code   RO         4820    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x08000342   0x08000342   0x00000004   Code   RO         4826    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4829    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4832    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4834    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4836    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4839    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4841    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4843    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4845    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4847    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4849    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4851    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4853    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4855    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4857    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4859    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4863    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4865    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4867    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000000   Code   RO         4869    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x08000346   0x08000346   0x00000002   Code   RO         4870    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x08000348   0x08000348   0x00000002   Code   RO         4890    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4903    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4905    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4907    .ARM.Collect$$libshutdown$$00000006  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4910    .ARM.Collect$$libshutdown$$00000009  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4913    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4915    .ARM.Collect$$libshutdown$$0000000E  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000000   Code   RO         4918    .ARM.Collect$$libshutdown$$00000011  c_w.l(libshutdown2.o)
-    0x0800034a   0x0800034a   0x00000002   Code   RO         4919    .ARM.Collect$$libshutdown$$00000012  c_w.l(libshutdown2.o)
-    0x0800034c   0x0800034c   0x00000000   Code   RO         4795    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x0800034c   0x0800034c   0x00000000   Code   RO         4797    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x0800034c   0x0800034c   0x00000006   Code   RO         4809    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x08000352   0x08000352   0x00000000   Code   RO         4799    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x08000352   0x08000352   0x00000004   Code   RO         4800    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x08000356   0x08000356   0x00000000   Code   RO         4802    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x08000356   0x08000356   0x00000008   Code   RO         4803    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x0800035e   0x0800035e   0x00000002   Code   RO         4824    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x08000360   0x08000360   0x00000000   Code   RO         4872    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x08000360   0x08000360   0x00000004   Code   RO         4873    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x08000364   0x08000364   0x00000006   Code   RO         4874    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x08000324   0x08000324   0x0000001c   Code   RO         5067    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x08000340   0x08000340   0x00000002   Code   RO         4931    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000342   0x08000342   0x00000004   Code   RO         4937    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4940    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4943    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4945    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4947    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4950    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4952    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4954    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4956    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4958    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4960    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4962    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4964    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4966    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4968    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4970    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4974    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4976    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4978    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000000   Code   RO         4980    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x08000346   0x08000346   0x00000002   Code   RO         4981    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x08000348   0x08000348   0x00000002   Code   RO         5001    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5014    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5016    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5018    .ARM.Collect$$libshutdown$$00000006  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5021    .ARM.Collect$$libshutdown$$00000009  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5024    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5026    .ARM.Collect$$libshutdown$$0000000E  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000000   Code   RO         5029    .ARM.Collect$$libshutdown$$00000011  c_w.l(libshutdown2.o)
+    0x0800034a   0x0800034a   0x00000002   Code   RO         5030    .ARM.Collect$$libshutdown$$00000012  c_w.l(libshutdown2.o)
+    0x0800034c   0x0800034c   0x00000000   Code   RO         4906    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0800034c   0x0800034c   0x00000000   Code   RO         4908    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0800034c   0x0800034c   0x00000006   Code   RO         4920    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x08000352   0x08000352   0x00000000   Code   RO         4910    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x08000352   0x08000352   0x00000004   Code   RO         4911    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x08000356   0x08000356   0x00000000   Code   RO         4913    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x08000356   0x08000356   0x00000008   Code   RO         4914    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0800035e   0x0800035e   0x00000002   Code   RO         4935    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000360   0x08000360   0x00000000   Code   RO         4983    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000360   0x08000360   0x00000004   Code   RO         4984    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x08000364   0x08000364   0x00000006   Code   RO         4985    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x0800036a   0x0800036a   0x00000002   PAD
     0x0800036c   0x0800036c   0x00000040   Code   RO            4    .text               startup_stm32h723xx.o
-    0x080003ac   0x080003ac   0x00000064   Code   RO         4787    .text               c_w.l(rt_memcpy_w.o)
-    0x08000410   0x08000410   0x0000004e   Code   RO         4789    .text               c_w.l(rt_memclr_w.o)
-    0x0800045e   0x0800045e   0x00000006   Code   RO         4791    .text               c_w.l(heapauxi.o)
-    0x08000464   0x08000464   0x0000004a   Code   RO         4811    .text               c_w.l(sys_stackheap_outer.o)
-    0x080004ae   0x080004ae   0x00000012   Code   RO         4813    .text               c_w.l(exit.o)
-    0x080004c0   0x080004c0   0x00000008   Code   RO         4821    .text               c_w.l(libspace.o)
-    0x080004c8   0x080004c8   0x0000000c   Code   RO         4882    .text               c_w.l(sys_exit.o)
-    0x080004d4   0x080004d4   0x00000002   Code   RO         4893    .text               c_w.l(use_no_semi.o)
-    0x080004d6   0x080004d6   0x00000000   Code   RO         4895    .text               c_w.l(indicate_semi.o)
+    0x080003ac   0x080003ac   0x00000064   Code   RO         4898    .text               c_w.l(rt_memcpy_w.o)
+    0x08000410   0x08000410   0x0000004e   Code   RO         4900    .text               c_w.l(rt_memclr_w.o)
+    0x0800045e   0x0800045e   0x00000006   Code   RO         4902    .text               c_w.l(heapauxi.o)
+    0x08000464   0x08000464   0x0000004a   Code   RO         4922    .text               c_w.l(sys_stackheap_outer.o)
+    0x080004ae   0x080004ae   0x00000012   Code   RO         4924    .text               c_w.l(exit.o)
+    0x080004c0   0x080004c0   0x00000008   Code   RO         4932    .text               c_w.l(libspace.o)
+    0x080004c8   0x080004c8   0x0000000c   Code   RO         4993    .text               c_w.l(sys_exit.o)
+    0x080004d4   0x080004d4   0x00000002   Code   RO         5004    .text               c_w.l(use_no_semi.o)
+    0x080004d6   0x080004d6   0x00000000   Code   RO         5006    .text               c_w.l(indicate_semi.o)
     0x080004d6   0x080004d6   0x00000002   Code   RO          425    i.BusFault_Handler  stm32h7xx_it.o
     0x080004d8   0x080004d8   0x00000002   Code   RO          426    i.DebugMon_Handler  stm32h7xx_it.o
     0x080004da   0x080004da   0x00000004   Code   RO           13    i.Error_Handler     main.o
@@ -2326,75 +2373,81 @@ Memory Map of the image
     0x08002d48   0x08002d48   0x00000018   Code   RO           14    i.HAL_TIM_PeriodElapsedCallback  main.o
     0x08002d60   0x08002d60   0x00000002   Code   RO         3680    i.HAL_TIM_TriggerCallback  stm32h7xx_hal_tim.o
     0x08002d62   0x08002d62   0x00000002   Code   RO          433    i.HardFault_Handler  stm32h7xx_it.o
-    0x08002d64   0x08002d64   0x00000054   Code   RO         4712    i.IMU_RequestData   dm_imu.o
-    0x08002db8   0x08002db8   0x0000005c   Code   RO         4713    i.IMU_UpdateAccel   dm_imu.o
-    0x08002e14   0x08002e14   0x00000024   Code   RO         4714    i.IMU_UpdateData    dm_imu.o
-    0x08002e38   0x08002e38   0x00000064   Code   RO         4715    i.IMU_UpdateEuler   dm_imu.o
-    0x08002e9c   0x08002e9c   0x0000005c   Code   RO         4716    i.IMU_UpdateGyro    dm_imu.o
-    0x08002ef8   0x08002ef8   0x00000094   Code   RO         4717    i.IMU_UpdateQuaternion  dm_imu.o
-    0x08002f8c   0x08002f8c   0x00000064   Code   RO          228    i.MX_FDCAN1_Init    fdcan.o
-    0x08002ff0   0x08002ff0   0x00000068   Code   RO          229    i.MX_FDCAN2_Init    fdcan.o
-    0x08003058   0x08003058   0x00000068   Code   RO          230    i.MX_FDCAN3_Init    fdcan.o
-    0x080030c0   0x080030c0   0x00000090   Code   RO          188    i.MX_GPIO_Init      gpio.o
-    0x08003150   0x08003150   0x0000006c   Code   RO          385    i.MX_TIM1_Init      tim.o
-    0x080031bc   0x080031bc   0x00000002   Code   RO          434    i.MemManage_Handler  stm32h7xx_it.o
-    0x080031be   0x080031be   0x00000002   Code   RO          435    i.NMI_Handler       stm32h7xx_it.o
-    0x080031c0   0x080031c0   0x00000002   Code   RO          436    i.PendSV_Handler    stm32h7xx_it.o
-    0x080031c2   0x080031c2   0x00000002   PAD
-    0x080031c4   0x080031c4   0x00000120   Code   RO          836    i.RCCEx_PLL2_Config  stm32h7xx_hal_rcc_ex.o
-    0x080032e4   0x080032e4   0x00000120   Code   RO          837    i.RCCEx_PLL3_Config  stm32h7xx_hal_rcc_ex.o
-    0x08003404   0x08003404   0x00000002   Code   RO          437    i.SVC_Handler       stm32h7xx_it.o
-    0x08003406   0x08003406   0x00000004   Code   RO          438    i.SysTick_Handler   stm32h7xx_it.o
-    0x0800340a   0x0800340a   0x00000002   PAD
-    0x0800340c   0x0800340c   0x00000098   Code   RO           15    i.SystemClock_Config  main.o
-    0x080034a4   0x080034a4   0x000000c0   Code   RO         4607    i.SystemInit        system_stm32h7xx.o
-    0x08003564   0x08003564   0x0000000c   Code   RO          439    i.TIM1_UP_IRQHandler  stm32h7xx_it.o
-    0x08003570   0x08003570   0x000000d8   Code   RO         3682    i.TIM_Base_SetConfig  stm32h7xx_hal_tim.o
-    0x08003648   0x08003648   0x00000012   Code   RO         3693    i.TIM_ETR_SetConfig  stm32h7xx_hal_tim.o
-    0x0800365a   0x0800365a   0x00000002   PAD
-    0x0800365c   0x0800365c   0x00000014   Code   RO         3694    i.TIM_ITRx_SetConfig  stm32h7xx_hal_tim.o
-    0x08003670   0x08003670   0x00000022   Code   RO         3702    i.TIM_TI1_ConfigInputStage  stm32h7xx_hal_tim.o
-    0x08003692   0x08003692   0x00000024   Code   RO         3704    i.TIM_TI2_ConfigInputStage  stm32h7xx_hal_tim.o
-    0x080036b6   0x080036b6   0x00000002   Code   RO          440    i.UsageFault_Handler  stm32h7xx_it.o
-    0x080036b8   0x080036b8   0x00000022   Code   RO          586    i.__NVIC_SetPriority  stm32h7xx_hal_cortex.o
-    0x080036da   0x080036da   0x00000002   PAD
-    0x080036dc   0x080036dc   0x00000048   Code   RO         4644    i.can_bsp_init      can_bsp.o
-    0x08003724   0x08003724   0x00000040   Code   RO         4645    i.can_filter_init   can_bsp.o
-    0x08003764   0x08003764   0x0000001c   Code   RO         4646    i.fdcan1_rx_callback  can_bsp.o
-    0x08003780   0x08003780   0x0000001c   Code   RO         4647    i.fdcan2_rx_callback  can_bsp.o
-    0x0800379c   0x0800379c   0x0000001c   Code   RO         4648    i.fdcan3_rx_callback  can_bsp.o
-    0x080037b8   0x080037b8   0x0000001e   Code   RO         4649    i.fdcanx_receive    can_bsp.o
-    0x080037d6   0x080037d6   0x00000002   PAD
-    0x080037d8   0x080037d8   0x000000fc   Code   RO           16    i.main              main.o
-    0x080038d4   0x080038d4   0x00000028   Code   RO         4719    i.uint_to_float     dm_imu.o
-    0x080038fc   0x080038fc   0x0000000a   Code   RO         4880    x$fpl$fpinit        fz_wv.l(fpinit.o)
-    0x08003906   0x08003906   0x00000002   PAD
-    0x08003908   0x08003908   0x0000005c   Data   RO         3069    .constdata          stm32h7xx_hal_fdcan.o
-    0x08003964   0x08003964   0x00000010   Data   RO         4608    .constdata          system_stm32h7xx.o
-    0x08003974   0x08003974   0x00000020   Data   RO         4950    Region$$Table       anon$$obj.o
+    0x08002d64   0x08002d64   0x0000005c   Code   RO         4712    i.IMU_UpdateAccel   dm_imu.o
+    0x08002dc0   0x08002dc0   0x00000024   Code   RO         4713    i.IMU_UpdateData    dm_imu.o
+    0x08002de4   0x08002de4   0x00000064   Code   RO         4714    i.IMU_UpdateEuler   dm_imu.o
+    0x08002e48   0x08002e48   0x0000005c   Code   RO         4715    i.IMU_UpdateGyro    dm_imu.o
+    0x08002ea4   0x08002ea4   0x00000094   Code   RO         4716    i.IMU_UpdateQuaternion  dm_imu.o
+    0x08002f38   0x08002f38   0x00000064   Code   RO          228    i.MX_FDCAN1_Init    fdcan.o
+    0x08002f9c   0x08002f9c   0x00000068   Code   RO          229    i.MX_FDCAN2_Init    fdcan.o
+    0x08003004   0x08003004   0x00000068   Code   RO          230    i.MX_FDCAN3_Init    fdcan.o
+    0x0800306c   0x0800306c   0x00000090   Code   RO          188    i.MX_GPIO_Init      gpio.o
+    0x080030fc   0x080030fc   0x0000006c   Code   RO          385    i.MX_TIM1_Init      tim.o
+    0x08003168   0x08003168   0x00000002   Code   RO          434    i.MemManage_Handler  stm32h7xx_it.o
+    0x0800316a   0x0800316a   0x00000002   Code   RO          435    i.NMI_Handler       stm32h7xx_it.o
+    0x0800316c   0x0800316c   0x00000002   Code   RO          436    i.PendSV_Handler    stm32h7xx_it.o
+    0x0800316e   0x0800316e   0x00000002   PAD
+    0x08003170   0x08003170   0x00000120   Code   RO          836    i.RCCEx_PLL2_Config  stm32h7xx_hal_rcc_ex.o
+    0x08003290   0x08003290   0x00000120   Code   RO          837    i.RCCEx_PLL3_Config  stm32h7xx_hal_rcc_ex.o
+    0x080033b0   0x080033b0   0x00000002   Code   RO          437    i.SVC_Handler       stm32h7xx_it.o
+    0x080033b2   0x080033b2   0x00000004   Code   RO          438    i.SysTick_Handler   stm32h7xx_it.o
+    0x080033b6   0x080033b6   0x00000002   PAD
+    0x080033b8   0x080033b8   0x00000098   Code   RO           15    i.SystemClock_Config  main.o
+    0x08003450   0x08003450   0x000000c0   Code   RO         4607    i.SystemInit        system_stm32h7xx.o
+    0x08003510   0x08003510   0x0000000c   Code   RO          439    i.TIM1_UP_IRQHandler  stm32h7xx_it.o
+    0x0800351c   0x0800351c   0x000000d8   Code   RO         3682    i.TIM_Base_SetConfig  stm32h7xx_hal_tim.o
+    0x080035f4   0x080035f4   0x00000012   Code   RO         3693    i.TIM_ETR_SetConfig  stm32h7xx_hal_tim.o
+    0x08003606   0x08003606   0x00000002   PAD
+    0x08003608   0x08003608   0x00000014   Code   RO         3694    i.TIM_ITRx_SetConfig  stm32h7xx_hal_tim.o
+    0x0800361c   0x0800361c   0x00000022   Code   RO         3702    i.TIM_TI1_ConfigInputStage  stm32h7xx_hal_tim.o
+    0x0800363e   0x0800363e   0x00000024   Code   RO         3704    i.TIM_TI2_ConfigInputStage  stm32h7xx_hal_tim.o
+    0x08003662   0x08003662   0x00000002   Code   RO          440    i.UsageFault_Handler  stm32h7xx_it.o
+    0x08003664   0x08003664   0x00000022   Code   RO          586    i.__NVIC_SetPriority  stm32h7xx_hal_cortex.o
+    0x08003686   0x08003686   0x00000002   PAD
+    0x08003688   0x08003688   0x00000048   Code   RO         4644    i.can_bsp_init      can_bsp.o
+    0x080036d0   0x080036d0   0x00000040   Code   RO         4645    i.can_filter_init   can_bsp.o
+    0x08003710   0x08003710   0x0000001c   Code   RO         4646    i.fdcan1_rx_callback  can_bsp.o
+    0x0800372c   0x0800372c   0x0000001c   Code   RO         4647    i.fdcan2_rx_callback  can_bsp.o
+    0x08003748   0x08003748   0x0000001c   Code   RO         4648    i.fdcan3_rx_callback  can_bsp.o
+    0x08003764   0x08003764   0x0000001e   Code   RO         4649    i.fdcanx_receive    can_bsp.o
+    0x08003782   0x08003782   0x00000002   PAD
+    0x08003784   0x08003784   0x00000010   Code   RO         4723    i.imu_init          dm_imu.o
+    0x08003794   0x08003794   0x00000008   Code   RO         4724    i.imu_read_reg      dm_imu.o
+    0x0800379c   0x0800379c   0x00000006   Code   RO         4726    i.imu_request_accel  dm_imu.o
+    0x080037a2   0x080037a2   0x00000006   Code   RO         4728    i.imu_request_gyro  dm_imu.o
+    0x080037a8   0x080037a8   0x00000006   Code   RO         4729    i.imu_request_quat  dm_imu.o
+    0x080037ae   0x080037ae   0x00000002   PAD
+    0x080037b0   0x080037b0   0x0000005c   Code   RO         4732    i.imu_send_cmd      dm_imu.o
+    0x0800380c   0x0800380c   0x00000104   Code   RO           16    i.main              main.o
+    0x08003910   0x08003910   0x00000028   Code   RO         4738    i.uint_to_float     dm_imu.o
+    0x08003938   0x08003938   0x0000000a   Code   RO         4991    x$fpl$fpinit        fz_wv.l(fpinit.o)
+    0x08003942   0x08003942   0x00000002   PAD
+    0x08003944   0x08003944   0x0000005c   Data   RO         3069    .constdata          stm32h7xx_hal_fdcan.o
+    0x080039a0   0x080039a0   0x00000010   Data   RO         4608    .constdata          system_stm32h7xx.o
+    0x080039b0   0x080039b0   0x00000020   Data   RO         5061    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003994, Size: 0x00000000, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080039d0, Size: 0x00000000, Max: 0x00020000, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region RW_IRAM2 (Exec base: 0x24000000, Load base: 0x08003994, Size: 0x00000900, Max: 0x00050000, ABSOLUTE)
+    Execution Region RW_IRAM2 (Exec base: 0x24000000, Load base: 0x080039d0, Size: 0x00000908, Max: 0x00050000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x24000000   0x08003994   0x00000008   Data   RW           17    .data               main.o
-    0x24000008   0x0800399c   0x00000004   Data   RW          234    .data               fdcan.o
-    0x2400000c   0x080039a0   0x0000000c   Data   RW         2077    .data               stm32h7xx_hal.o
-    0x24000018   0x080039ac   0x00000008   Data   RW         4609    .data               system_stm32h7xx.o
-    0x24000020   0x080039b4   0x00000018   Data   RW         4651    .data               can_bsp.o
+    0x24000000   0x080039d0   0x00000008   Data   RW           17    .data               main.o
+    0x24000008   0x080039d8   0x00000004   Data   RW          234    .data               fdcan.o
+    0x2400000c   0x080039dc   0x0000000c   Data   RW         2077    .data               stm32h7xx_hal.o
+    0x24000018   0x080039e8   0x00000008   Data   RW         4609    .data               system_stm32h7xx.o
+    0x24000020   0x080039f0   0x00000018   Data   RW         4651    .data               can_bsp.o
     0x24000038        -       0x000001e0   Zero   RW          233    .bss                fdcan.o
     0x24000218        -       0x0000004c   Zero   RW          386    .bss                tim.o
-    0x24000264        -       0x00000038   Zero   RW         4720    .bss                dm_imu.o
-    0x2400029c        -       0x00000060   Zero   RW         4822    .bss                c_w.l(libspace.o)
-    0x240002fc   0x080039cc   0x00000004   PAD
-    0x24000300        -       0x00000200   Zero   RW            2    HEAP                startup_stm32h723xx.o
-    0x24000500        -       0x00000400   Zero   RW            1    STACK               startup_stm32h723xx.o
+    0x24000264        -       0x00000040   Zero   RW         4739    .bss                dm_imu.o
+    0x240002a4        -       0x00000060   Zero   RW         4933    .bss                c_w.l(libspace.o)
+    0x24000304   0x08003a08   0x00000004   PAD
+    0x24000308        -       0x00000200   Zero   RW            2    HEAP                startup_stm32h723xx.o
+    0x24000508        -       0x00000400   Zero   RW            1    STACK               startup_stm32h723xx.o
 
 
 ==============================================================================
@@ -2405,10 +2458,10 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        306         56          0         24          0       4856   can_bsp.o
-       592         54          0          0         56       5805   dm_imu.o
+       642         68          0          0         64       9129   dm_imu.o
        768         54          0          4        480    1181073   fdcan.o
        160         16          0          0          0       1609   gpio.o
-       432         36          0          8          0    1166928   main.o
+       440         36          0          8          0    1166928   main.o
         64         26        716          0       1536        856   startup_stm32h723xx.o
        184         36          0         12          0      23133   stm32h7xx_hal.o
        198         12          0          0          0      39679   stm32h7xx_hal_cortex.o
@@ -2425,9 +2478,9 @@ Image component sizes
        168         18          0          0         76       1882   tim.o
 
     ----------------------------------------------------------------------
-     13414        740        856         56       2148    2487884   Object Totals
+     13474        754        856         56       2156    2491208   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        28          0          0          0          0          0   (incl. Padding)
+        30          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2478,15 +2531,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13884        756        856         56       2248    2478984   Grand Totals
-     13884        756        856         56       2248    2478984   ELF Image Totals
-     13884        756        856         56          0          0   ROM Totals
+     13944        770        856         56       2256    2481808   Grand Totals
+     13944        770        856         56       2256    2481808   ELF Image Totals
+     13944        770        856         56          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                14740 (  14.39kB)
-    Total RW  Size (RW Data + ZI Data)              2304 (   2.25kB)
-    Total ROM Size (Code + RO Data + RW Data)      14796 (  14.45kB)
+    Total RO  Size (Code + RO Data)                14800 (  14.45kB)
+    Total RW  Size (RW Data + ZI Data)              2312 (   2.26kB)
+    Total ROM Size (Code + RO Data + RW Data)      14856 (  14.51kB)
 
 ==============================================================================
 

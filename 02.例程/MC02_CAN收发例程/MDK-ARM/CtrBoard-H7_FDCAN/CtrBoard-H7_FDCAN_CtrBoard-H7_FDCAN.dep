@@ -1,7 +1,7 @@
 Dependencies for Project 'CtrBoard-H7_FDCAN', Target 'CtrBoard-H7_FDCAN': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (startup_stm32h723xx.s)(0x682C753E)(--cpu Cortex-M7.fp.dp -g --apcs=interwork -I.\RTE\_CtrBoard-H7_FDCAN-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\Keil\STM32H7xx_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32H723xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32h723xx.lst --xref -o ctrboard-h7_fdcan\startup_stm32h723xx.o --depend ctrboard-h7_fdcan\startup_stm32h723xx.d)
-F (../Core/Src/main.c)(0x6831F086)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -g -W -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../User -I ../DM-IMU-I.\RTE\_CtrBoard-H7_FDCAN-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\Keil\STM32H7xx_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H723xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H723xx-o ctrboard-h7_fdcan\main.o --omf_browse ctrboard-h7_fdcan\main.crf --depend ctrboard-h7_fdcan\main.d)
+F (../Core/Src/main.c)(0x69121017)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -g -W -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../User -I ../DM-IMU-I.\RTE\_CtrBoard-H7_FDCAN-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\Keil\STM32H7xx_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H723xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H723xx-o ctrboard-h7_fdcan\main.o --omf_browse ctrboard-h7_fdcan\main.crf --depend ctrboard-h7_fdcan\main.d)
 I (../Core/Inc/main.h)(0x68076943)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6680A8C4)
 I (../Core/Inc/stm32h7xx_hal_conf.h)(0x68076943)
@@ -41,7 +41,7 @@ I (../Core/Inc/fdcan.h)(0x68076942)
 I (../Core/Inc/tim.h)(0x68076942)
 I (../Core/Inc/gpio.h)(0x68076941)
 I (../User/can_bsp.h)(0x666BE879)
-I (../DM-IMU/dm_imu.h)(0x68075A4D)
+I (../DM-IMU/dm_imu.h)(0x69120FD4)
 F (../Core/Src/gpio.c)(0x682C759E)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -g -W -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../User -I ../DM-IMU-I.\RTE\_CtrBoard-H7_FDCAN-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\Keil\STM32H7xx_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H723xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H723xx-o ctrboard-h7_fdcan\gpio.o --omf_browse ctrboard-h7_fdcan\gpio.crf --depend ctrboard-h7_fdcan\gpio.d)
 I (../Core/Inc/gpio.h)(0x68076941)
 I (../Core/Inc/main.h)(0x68076943)
@@ -964,9 +964,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x6680A8C4)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x6680A8C4)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x6680A8C4)
 I (../Core/Inc/fdcan.h)(0x68076942)
-I (../DM-IMU/dm_imu.h)(0x68075A4D)
-F (..\DM-IMU\dm_imu.c)(0x68075FC8)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -g -W -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../User -I ../DM-IMU-I.\RTE\_CtrBoard-H7_FDCAN-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\Keil\STM32H7xx_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H723xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H723xx-o ctrboard-h7_fdcan\dm_imu.o --omf_browse ctrboard-h7_fdcan\dm_imu.crf --depend ctrboard-h7_fdcan\dm_imu.d)
-I (..\DM-IMU\dm_imu.h)(0x68075A4D)
+I (../DM-IMU/dm_imu.h)(0x69120FD4)
+F (..\DM-IMU\dm_imu.c)(0x69120F62)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -g -W -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../User -I ../DM-IMU-I.\RTE\_CtrBoard-H7_FDCAN-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\BeanPaste\AppData\Local\ArmMDK\Packs\Keil\STM32H7xx_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H723xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H723xx-o ctrboard-h7_fdcan\dm_imu.o --omf_browse ctrboard-h7_fdcan\dm_imu.crf --depend ctrboard-h7_fdcan\dm_imu.d)
+I (..\DM-IMU\dm_imu.h)(0x69120FD4)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6680A8C4)
 I (../Core/Inc/stm32h7xx_hal_conf.h)(0x68076943)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6680A8C4)
@@ -1003,4 +1003,5 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x6680A8C4)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x6680A8C4)
 I (../Core/Inc/fdcan.h)(0x68076942)
 I (../Core/Inc/main.h)(0x68076943)
-F (..\DM-IMU\dm_imu.h)(0x68075A4D)()
+I (d:\Keil_v5_armMDK\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\DM-IMU\dm_imu.h)(0x69120FD4)()
