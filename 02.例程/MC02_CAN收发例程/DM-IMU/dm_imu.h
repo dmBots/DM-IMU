@@ -4,8 +4,8 @@
 #include "stm32h7xx_hal.h"
 
 
-#define ACCEL_CAN_MAX (58.8f)
-#define ACCEL_CAN_MIN	(-58.8f)
+#define ACCEL_CAN_MAX (235.2f)
+#define ACCEL_CAN_MIN	(-235.2f)
 #define GYRO_CAN_MAX	(34.88f)
 #define GYRO_CAN_MIN	(-34.88f)
 #define PITCH_CAN_MAX	(90.0f)
