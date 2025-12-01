@@ -1,0 +1,31 @@
+[0.300s] Invoking command in '/home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu': PYTHONPATH=/home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/build --no-deps symlink_data
+[0.416s] running develop
+[0.483s] running egg_info
+[0.483s] creating dm_imu.egg-info
+[0.483s] writing dm_imu.egg-info/PKG-INFO
+[0.483s] writing dependency_links to dm_imu.egg-info/dependency_links.txt
+[0.483s] writing entry points to dm_imu.egg-info/entry_points.txt
+[0.483s] writing requirements to dm_imu.egg-info/requires.txt
+[0.483s] writing top-level names to dm_imu.egg-info/top_level.txt
+[0.483s] writing manifest file 'dm_imu.egg-info/SOURCES.txt'
+[0.484s] reading manifest file 'dm_imu.egg-info/SOURCES.txt'
+[0.484s] writing manifest file 'dm_imu.egg-info/SOURCES.txt'
+[0.485s] running build_ext
+[0.485s] Creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/lib/python3.10/site-packages/dm-imu.egg-link (link to .)
+[0.485s] Installing dm_imu_node script to /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/lib/dm_imu
+[0.485s] 
+[0.485s] Installed /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu
+[0.485s] running symlink_data
+[0.486s] creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index
+[0.486s] creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index/resource_index
+[0.486s] creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index/resource_index/packages
+[0.486s] symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/resource/dm_imu -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/ament_index/resource_index/packages
+[0.486s] symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/package.xml -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu
+[0.486s] creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/launch
+[0.486s] symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/launch/dm_imu.launch.py -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/launch
+[0.486s] symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/launch/dm_imu_rviz.launch.py -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/launch
+[0.486s] creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/config
+[0.486s] symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/config/params.yaml -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/config
+[0.486s] creating /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/rviz
+[0.486s] symbolically linking /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/rviz/imu.rviz -> /home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/share/dm_imu/rviz
+[0.514s] Invoked command in '/home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu' returned '0': PYTHONPATH=/home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kielas/dm-imu/02.例程/ROS2-humble例程/install/dm_imu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kielas/dm-imu/02.例程/ROS2-humble例程/build/dm_imu/build --no-deps symlink_data
