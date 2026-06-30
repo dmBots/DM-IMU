@@ -13,8 +13,8 @@ This folder is the Chinese source of materials for DM-IMU. Maintainers update th
 | `说明书/` | `manual/` | manuals, datasheets, and usage notes |
 | `固件/` | `firmware/` | firmware packages and flashing materials |
 | `上位机/` | `host-software/` | host software and debugging tools |
-| `图纸/` | `drawings/` | drawings and hardware materials |
-| `模型/` | `models/` | models and mechanical files |
+| `2D图纸/` | `2d-drawings/` | 2D drawings and hardware materials |
+| `3D模型/` | `3d-models/` | 3D models and mechanical files |
 | `示例/` | `examples/` | example projects and usage samples |
 | `测试数据/` | `test-data/` | test data and validation materials |
 | `版本说明/` | `release-notes/` | release notes and change records |
