@@ -1,25 +1,27 @@
 # DM-IMU
 
-中文 | [EN](./README.en.md)
+[中文](./README.zh.md) | EN
 
-## 概述
+## Overview
 
-这里是 DM-IMU 的中文资料源头。资料维护时只整理当前中文目录；Gitee 发布时基本保留中文目录，GitHub 发布时由脚本映射为英文目录。
+This folder is the Chinese source of materials for DM-IMU. Maintainers update the Chinese source folders only; Gitee preserves them, and GitHub publishing maps them to English paths.
 
-## 资料目录
+## Source Mapping
 
-- [说明书/](说明书/) - 说明书、数据手册和使用说明
-- [固件/](固件/) - 固件包和烧录相关资料
-- [上位机/](上位机/) - 配套上位机和调试工具
-- [2D图纸/](2D图纸/) - 2D 图纸和硬件资料
-- [3D模型/](3D模型/) - 3D 模型和结构文件
-- [示例/](示例/) - 示例工程和使用样例
-- [测试数据/](测试数据/) - 测试数据和验证资料
-- [版本说明/](版本说明/) - 版本说明和发布记录
+| Chinese source folder | GitHub publish folder | Notes |
+| --- | --- | --- |
+| `说明书/` | `manual/` | manuals, datasheets, and usage notes |
+| `固件/` | `firmware/` | firmware packages and flashing materials |
+| `上位机/` | `host-software/` | host software and debugging tools |
+| `2D图纸/` | `2d-drawings/` | 2D drawings and hardware materials |
+| `3D模型/` | `3d-models/` | 3D models and mechanical files |
+| `示例/` | `examples/` | example projects and usage samples |
+| `测试数据/` | `test-data/` | test data and validation materials |
+| `版本说明/` | `release-notes/` | release notes and change records |
 
-## 发布规则
+## Publishing Policy
 
-- 源头目录使用中文，优先服务资料整理同事。
-- Gitee 发布端默认保留中文目录和中文 README。
-- GitHub 发布端由脚本按路径映射转换为英文目录和英文 README。
-- 不在源头手工维护第二套 GitHub 英文目录。
+- The source folder keeps Chinese paths for maintainers.
+- Gitee uses Chinese paths and Chinese README by default.
+- GitHub is generated with English paths and English README by the publish script.
+- Do not maintain a second English source tree manually.
